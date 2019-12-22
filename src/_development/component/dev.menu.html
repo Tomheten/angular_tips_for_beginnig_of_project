@@ -1,0 +1,18 @@
+<em class="toggle-menu-btn fa fa-gear" (click)="toggleMenu()"></em>
+
+<div *ngIf="menuOpened" #menu
+     style="padding: 10px; position: fixed; top: 0; height: 100%; width: 100%; z-index: 2000; background-color: aliceblue">
+  <h2 style="text-align: center">Development menu</h2>
+  <hr>
+  <div class="change-host-url-block">
+    <div class="current-host-url">Current host url: {{getCurrentHostUrl()}}</div>
+    <div>
+      <input #hostUrl
+             type="text"
+             class="host-url form-control"
+             [value]="hostUrlValue"
+             style="display: initial; width: auto; padding-top: inherit">
+      <button class="btn btn-outline-primary" (click)="changeHostUrl()">Change host url</button>
+    </div>
+  </div>
+</div>

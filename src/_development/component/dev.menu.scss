@@ -1,0 +1,13 @@
+.toggle-menu-btn {
+  user-select: none;
+  font-size: 2rem;
+  color: red;
+  position: fixed;
+  right: 3px;
+  top: 3px;
+  z-index: 2001;
+  cursor: pointer;
+  &:hover {
+    outline: 1px solid red;
+  }
+}
